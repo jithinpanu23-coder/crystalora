@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <title>CRYSTALORA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -171,7 +172,7 @@
     <!-- NAVBAR -->
     <div class="navbar">
         <div class="logo">
-            <img src="../static/image/logo.png" alt="logo">
+            <img src="{% static' image/logo.png' %}" alt="logo">
             CRYSTALORA
         </div>
 
@@ -183,7 +184,7 @@
 
     <!-- HERO SECTION -->
     <div class="hero">
-        <img src="../static/image/logo.png" alt="logo" class="hero-logo">
+        <img src="{% static 'image/logo.png' %}" alt="logo" class="hero-logo">
 
         <h2>CRYSTALORA</h2>
         <p>ILLUMINATE YOUR ESSENCE</p>
