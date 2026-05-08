@@ -1,0 +1,14 @@
+<h1>Admin Dashboard</h1>
+
+<a href="{% url 'add_product' %}">Add Product</a>
+
+{% for p in products %}
+<div style="border:1px solid #ccc; padding:10px; margin:10px;">
+    <h3>{{ p.name }}</h3>
+    <img src="{{ p.image.url }}" width="120">
+    <p>₹{{ p.price }}</p>
+
+    <a href="{% url 'edit_product' p.id %}">Edit</a>
+    <a href="{% url 'delete_product' p.id %}">Delete</a>
+</div>
+{% endfor %}
