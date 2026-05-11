@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'jewels',
     'cloudinary',
     'cloudinary_storage',
+
+    'whitenoise',
+
 ]
 
 MIDDLEWARE = [
